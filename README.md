@@ -18,6 +18,19 @@ PowerSchool's parent portal is hard to navigate — multiple logins, buried menu
 - **Runs a rules engine** — alerts fire on trigger conditions (e.g., "new zero grade", "missing assignment past due", "grade drop > N points")
 - **Delivers alerts to Discord** so parents don't have to check a portal manually
 
+## Architecture
+
+```mermaid
+graph LR
+    Browser[🌐 Stored session] --> PW[🤖 Playwright scrape]
+    PW --> Snap[(SQLite snapshots · history-aware)]
+    Snap --> Rules[📐 Rules engine]
+    Rules --> Trigger{Match condition?}
+    Trigger -->|yes| Alert[💬 Discord alert]
+    Trigger -->|no| Wait[⏳ Wait for next tick]
+    Snap --> Dash[📊 Parent dashboard]
+```
+
 ## Software
 
 | Layer | Tech |
