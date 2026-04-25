@@ -41,6 +41,12 @@ PowerSchool's parent portal is hard to navigate — multiple logins, buried menu
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
 ![Discord](https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord&logoColor=white)
 
+## Related in the AIOS Portfolio
+
+- **[Classroom Scraper](https://github.com/mikecutillo/classroom-scraper)** — Sibling tool; Google Classroom aggregator for assignments and grades across students
+- **[BMO Discord Agent](https://github.com/mikecutillo/bmo-discord-agent)** — Discord-native family AI companion; the alerts channel for grade drops and missing work
+- **[AIOS](https://github.com/mikecutillo/aios)** — The host; Next.js dashboard orchestrating 16+ household and business modules
+
 ---
 
 Part of the AIOS portfolio. See the [profile README](https://github.com/mikecutillo) for the full system map.
